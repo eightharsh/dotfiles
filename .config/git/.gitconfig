@@ -1,0 +1,65 @@
+[user]
+    name = 
+    email = 
+
+[core]
+    editor = vim
+    autocrlf = input
+    pager = less -FX
+    excludesfile = ~/.gitignore_global
+
+[color]
+    ui = auto
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = simple
+
+[pull]
+    rebase = false
+
+[fetch]
+    prune = true
+
+[rerere]
+    enabled = true
+
+[credential]
+    helper = osxkeychain
+
+[alias]
+    # status
+    st = status
+
+    # checkout
+    co = checkout
+
+    # branch
+    br = branch
+    branches = branch -a
+
+    # commit
+    cm = commit -m
+    amend = commit --amend --no-edit
+    uncommit = reset --soft HEAD~1
+
+    # add
+    a = add .
+    aa = add -A
+
+    # diff
+    df = diff
+    ds = diff --staged
+
+    # logs
+    l = log --oneline
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%an%C(reset) %C(dim white)(%ar)%C(reset)%n%C(white)%s%C(reset)' --all
+    last = log -1 HEAD
+    
+    # reset
+    undo = reset --hard HEAD~1
+    
+    # graph view
+    graph = log --graph --decorate --pretty=oneline --abbrev-commit --all

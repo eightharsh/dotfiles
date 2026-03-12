@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# ~/.config/borders/bordersrc
+
+borders width=3
+borders style=round
+borders hidpi=on
+borders active_color=0x99689d6a
+borders inactive_color=0x00000000
+borders background_color=0x00000000
